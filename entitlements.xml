@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Allow the app to access the network -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+
+    <!-- Allow the app to access the user's home directory -->
+    <key>com.apple.security.personal-information.home-directory</key>
+    <true/>
+
+    <!-- Allow the app to run dynamically loaded code -->
+    <key>com.apple.security.cs.allow-dyld-environment-variables</key>
+    <true/>
+
+    <!-- Allow the app to interact with other processes -->
+    <key>com.apple.security.temporary-exception.apple-events</key>
+    <array>
+        <string>com.apple.systempreferences</string>
+    </array>
+
+    <!-- Allow the app to use the JIT compiler (needed for some apps) -->
+    <key>com.apple.security.cs.allow-jit</key>
+    <true/>
+
+    <!-- Allow the app to use shared libraries -->
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+</dict>
+</plist>
+
